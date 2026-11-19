@@ -1,0 +1,6 @@
+from scipy.stats import ttest_ind
+
+
+def ttest(sample_a, sample_b):
+	"""Perform a two-sided Welch's t-test on two independent samples."""
+	return ttest_ind(sample_a, sample_b, equal_var=False)
